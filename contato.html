@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>logoipsum</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css">
+    <script>
+        function agradecimento(){
+            alert ("Obrigado por entrar em contato!");
+        };
+    </script>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="assets/logo.svg" alt="Logo Logoipsum"></a>
+        <nav class="menuSuperior">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="resumoPostagem">
+            <div class="titulo">
+                <h1>Contato</h1>
+                <p class="descCont">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus quis augue elementum vestibulum. Nam a orci erat. Aenean arcu mauris, finibus a rutrum quis, commodo sollicitudin nibh. Morbi diam lacus, suscipit nec maximus et, tincidunt at quam.</p>
+            </div>
+            <div class="infoCont">
+                <h3>INFORMAÇÕES PARA CONTATO</h3>
+                <div class="contato">
+                    <div class="tituloCont">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Endereço</p>
+                    </div>
+                    <p>Av. Tancredo Neves, 2227, Ed. Salvador Prime Caminho das Árvores, Salvador • Bahia</p>
+                </div>
+                <div class="contato">
+                    <div class="tituloCont">
+                        <i class="fas fa-phone-alt"></i>
+                        <p>Telefone</p>
+                    </div>
+                    <p>(71) 9 9999-9999 | (11) 1 1111-1111</p>
+                </div>
+                <div class="contato">
+                    <div class="tituloCont">
+                        <i class="fas fa-headset"></i>
+                        <p>Suporte</p>
+                    </div>
+                    <p>suporte@cubos.academy</p>
+                </div>
+            </div>
+            <div class="formularioContato">
+                <h3>ENTRE EM CONTATO</h3>
+                <form>
+                    <div class="nomeC">
+                        <p>Nome</p>
+                        <input type="text">
+                    </div>
+                    <div class="emailC">
+                        <p>E-mail</p>
+                        <input type="email">
+                    </div>
+                    <div class="assuntoC">
+                        <p>Assunto</p>
+                        <input type="text">
+                    </div>
+                    <div class="comentarioC comentarioContato">
+                        <p>Comentário</p>
+                        <textarea cols="30" rows="10"></textarea>
+                    </div>
+                </form>
+                <div class="botaoContato">
+                    <button type="submit" onclick="agradecimento()">Enviar</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <aside>
+        <section class="pesquisa">
+            <input type="text" placeholder="Pesquise aqui...">
+        </section>
+        <section class="categoria">
+            <h2>Categorias</h2>
+            <div class="item">
+                <div><p>Tecnologia</p></div>
+                <div><p>25</p></div>
+            </div>
+            <div class="item">
+                <div><p>Estilo de Vida</p></div>
+                <div><p>8</p></div>
+            </div>
+            <div class="item">
+                <div><p>Arte</p></div>
+                <div><p>2</p></div>
+            </div>
+            <div class="item">
+                <div><p>Comida</p></div>
+                <div><p>12</p></div>
+            </div>
+            <div class="item">
+                <div><p>Aventura</p></div>
+                <div><p>9</p></div>
+            </div>
+            <div class="item">
+                <div><p>Moda</p></div>
+                <div><p>12</p></div>
+            </div>
+        </section>
+        <section class="propaganda">
+            <h2>Publicidade</h2>
+            <div class="ad"><p>340 x 240</p></div>
+            <div class="ad"><p>340 x 240</p></div>
+            <div class="ad"><p>340 x 240</p></div>
+        </section>
+    </aside>
+    <footer>
+        <p>Copyright ©2020 Todos os direitos reservados | by Fulano</p>
+    </footer>
+</body>
+</html>

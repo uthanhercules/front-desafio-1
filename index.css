@@ -1,0 +1,449 @@
+/*#### CONFIGURAÇÕES GERAIS ####*/
+:root{
+    /*#### Cores ####*/
+    --corFundo: #E5E5E5;
+    --corFonteCorpo: #545454;
+    --corFonteTitulo: #000;
+    --corBorda: #FE0078;
+
+    /*#### Adicionais ####*/
+    --sombra: 0 0 10px rgba(0, 0, 0, 0.12);
+}
+
+*{
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/*#### ESTRUTURA ####*/
+body{
+    background-color: var(--corFundo);
+    display: grid;
+    grid-template-areas: 
+        "header header header"
+        "main main aside"
+        "main main ."
+        "footer footer footer";
+}
+
+header{
+    grid-area: header;
+    background-color: white;
+    box-shadow: var(--sombra);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5vh 6vw;
+    position: sticky;
+    top: 0;
+}
+
+main{
+    grid-area: main;
+    margin: 6vh 3vw 6vh 6vw;
+    min-width: 730px;
+}
+
+aside{grid-area: aside;
+    margin: 8vh 6vw 6vh 0;
+    border-radius: 4px;
+    min-width: 25vw;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 20px;
+    box-shadow: var(--sombra);
+}
+footer{
+    grid-area: footer;
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 0;
+}
+
+button{
+    background-color: white;
+    border: solid 1px var(--corBorda);
+    padding: 12px 24px;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--corFonteCorpo);
+    margin: 24px;
+    border-radius: 20px;
+}
+
+/*#### TEXTO GERAL ####*/
+h1{
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--corFonteTitulo);
+}
+
+h2{
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--corFonteTitulo);
+}
+
+h3{
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--corFonteTitulo);
+    padding-left: 24px;
+    padding-bottom: 26px;
+}
+
+.log{
+    font-size: 12px;
+    margin-top: 8px;
+}
+
+/*#### CABEÇALHO ####*/
+header a:first-child{
+    margin-right: auto;
+}
+
+header ul li{
+    display: inline;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+header ul li a{
+    color: var(--corFonte);
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+/*#### ESTADOS DO CABEÇALHO ####*/
+header ul li a:hover{
+    color: var(--corBorda);
+    cursor: pointer;
+}
+
+/*#### CORPO ####*/
+.resumoPostagem{
+    box-shadow: var(--sombra);
+    background-color: white;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--corFonteCorpo);
+}
+
+.titulo{
+    padding: 24px 24px 14px 24px;
+}
+
+.descCont{
+    margin-top: 24px;
+}
+
+.resumoPostagem img{
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.descricao{
+    margin: 24px;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--corFonteCorpo);
+}
+
+.detalheD{
+    padding-bottom: 46px;
+}
+
+
+
+.botao{
+    display: flex;
+    justify-content: right;
+    margin: 24px;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--corFonteCorpo);
+}
+
+/*#### ESTADOS DO CORPO ####*/
+button:hover{
+    background-color: var(--corBorda);
+    color: white;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+/*#### LATERAL ####*/
+.pesquisa{
+    margin-bottom: 25px;
+}
+
+.pesquisa input{
+    background-color: white;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--corFonteCorpo);
+    border: 1px solid #EEEEEE;
+    border-radius: 10px;
+    padding: 17px;
+    width: 23vw;
+}
+
+.categoria{
+    margin-bottom: 40px;
+}
+
+.categoria h2, .propaganda h2{
+    border-left: 2px solid var(--corBorda);
+    padding-left: 11px;
+    margin-bottom: 40px;
+}
+
+.item{
+    margin-bottom: 16px;
+    padding-bottom: 16px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #EEEEEE;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--corFonteCorpo);
+}
+
+.item div:last-child{
+    margin-left: auto;
+}
+
+.ad{
+    width: 100%;
+    height: 30vh;
+    background-color: #EEEEEE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--corFonteCorpo);
+    margin-bottom: 32px;
+}
+
+.ad p{
+    font-size: 36px;
+}
+
+/*#### ESTADOS DA LATERAL ####*/
+.pesquisa input:hover{
+    border-color: var(--corBorda);
+    cursor: pointer;
+}
+
+.pesquisa input:focus{
+    background-color: rgba(255, 0, 255, 0.05);
+    outline: none;
+}
+
+.item:hover{
+    cursor: pointer;
+    color: var(--corBorda);
+    border-bottom: 1px dotted var(--corBorda);
+}
+
+/*#### RODAPÉ ####*/
+footer p{
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--corFonteCorpo);
+    color: white;
+}
+
+/*#### DETALHES ####*/
+.comentarios{
+    min-width: 730px;
+}
+
+.comentarios form{
+    display: grid;
+    grid-template-areas: 
+        "nome email"
+        "comentario comentario";
+    margin-top: 24px;
+}
+
+.nomeC{
+    grid-area: nome;
+    margin: 0 24px 24px 0;
+}
+
+.emailC{
+    grid-area: email;
+}
+
+.comentarioC{
+    grid-area: comentario;
+}
+
+.nomeC input, .emailC input{
+    width: 100%;
+    border: 1px solid #EEEEEE;
+    height: 30px;
+    border-radius: 2px;
+}
+
+.nomeC p, .emailC p, .comentarioC p{
+    margin-bottom: 8px;
+}
+
+.botaoC{
+    grid-area: botao;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.botaoC button{
+    background-color: var(--corBorda);
+    color: white;
+    margin: 48px 0 64px 0;
+}
+
+.comentarioC textarea{
+    width: 98%;
+    height: 30vh;
+    padding: 10px;
+    border-radius: 2px;
+    border: 1px solid #EEEEEE;
+}
+
+/*#### ESTADOS DO DETALHES ####*/
+.comentarios textarea:hover, .nomeC input:hover, .emailC input:hover, .assuntoC input:hover ,.comentarioContato textarea:hover{
+    border-color: var(--corBorda);
+    cursor: pointer;
+}
+
+.comentarios textarea:focus, .nomeC input:focus, .emailC input:focus, .assuntoC input:focus ,.comentarioContato textarea:focus{
+    background-color: rgba(255, 0, 255, 0.05);
+    outline: none;
+}
+
+.botaoC button:hover{
+    background-color: white;
+    color: var(--corBorda);
+    cursor: pointer;
+}
+
+/*#### CONTATO ####*/
+.contato{
+    display: flex;
+    flex-direction: column;
+    padding: 0 24px;
+    margin-bottom: 26px;
+}
+
+.contato p{
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--corFonteCorpo);
+}
+
+.infoCont{
+    margin-top: 20px;
+}
+
+.tituloCont{
+    display: flex;
+    align-items: center;
+    margin-bottom: 14px;
+}
+
+.tituloCont i{
+    margin-right: 8px;
+    font-size: 20px;
+    color: var(--corBorda);
+}
+
+.tituloCont p{
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--corFonteTitulo);
+}
+
+.formularioContato form{
+    display: grid;
+    padding: 24px;
+    grid-template-areas: 
+        "nome email"
+        "assunto assunto"
+        "comentario comentario";
+}
+
+.assuntoC{
+    grid-area: assunto;
+}
+
+.assuntoC input{
+    width: 100%;
+    border: 1px solid #EEEEEE;
+    height: 30px;
+    border-radius: 2px;
+    margin-top: 8px;
+}
+
+.comentarioContato p{
+    margin-top: 24px;
+}
+
+.botaoContato{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.botaoContato button{
+    margin: 12px 14px 100px 0;
+    background-color: var(--corBorda);
+    color: white;
+}
+/*#### ESTADOS DO CONTATO ####*/
+.botaoContato button:hover{
+    background-color: white;
+    color: var(--corBorda);
+}
+
+/*#### EM CONSTRUÇÃO ####*/
+.construcao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.emConstrucao{
+    height: 30vh;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: var(--sombra);
+    padding: 20px;
+}
+
+.emConstrucao i{
+    color: var(--corBorda);
+    margin: 20px 0 32px 0;
+    font-size: 52px;
+}
+
+.emConstrucao button{
+    background-color: var(--corBorda);
+    color: white;
+}
+/*#### ESTADOS DO CONSTRUCAO ####*/
+.emConstrucao button:hover{
+    background-color: white;
+    color: var(--corBorda);
+}
