@@ -1,5 +1,18 @@
-![](https://i.imgur.com/xG74tOh.png)
-
-# Desafio | Front-end - Módulo 1
-
-O objetivo deste exercício era replicar a página encontrada no arquivo 'Desafio front academy 1.fig'.
+## Simple web page
+ 
+Project made for a programming challenge.  
+ 
+## Technology 
+Here are the technologies used in this project.
+ 
+* HTML 5
+* CSS 3
+ 
+## Services Used
+ 
+* Github
+* ...
+ 
+## Links
+ 
+  - Link of deployed application: https://uthanhercules.github.io/front-desafio.github.io
