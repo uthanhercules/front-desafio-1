@@ -7,11 +7,7 @@ Here are the technologies used in this project.
  
 * HTML 5
 * CSS 3
- 
-## Services Used
- 
-* Github
- 
+  
 ## Links
  
   - Link of deployed application: https://uthanhercules.github.io/front-desafio.github.io
